@@ -5,13 +5,13 @@
         <link href="survey-design.css" rel="stylesheet">
     </head>
 
-    <h1>Survey</h1>
+    <h1>Hares, Heaps, Handlebars in Attica</h1>
 
     <div class="nav-bar">
-        <a class="nav-item" href="homepage.html">Homepage</a>
-        <a class="nav-item" href="survey.html">Survey</a>
-        <a class="nav-item" href="more-info.html">More Info</a>
-        <a class="nav-item" href="more-pictures.html">More Pictures</a>
+        <a class="nav-item other-page" href="homepage.html">Homepage</a>
+        <a class="nav-item current-page" href="survey.html">Survey</a>
+        <a class="nav-item other-page" href="more-info.html">More Info</a>
+        <a class="nav-item other-page" href="more-pictures.html">More Pictures</a>
     </div>
 
     <form method="post">
@@ -39,28 +39,30 @@
             </div>
 
             <div class="survey-item">
-                <label for="prompt">How does<br>
+                <label for="prompt" class="question-prompt">How does<br>
                     "Hares, Heaps, Handlebars in Attica"<br>
                     make you <strong>feel?</strong></label>
                 <textarea id="prompt" name="prompt"></textarea>
             </div>
 
-            <p class="center">Hares, heaps, or handlebars in Attica?</p>
+            <div class="survey-item">
+                <p class="options-prompt">Hares, heaps, or handlebars in Attica?</p>
 
-            <div class="shift-options">
-                <div class="in-row">
-                    <input type="radio" id="hares" name="hares">
-                    <label for="hares">Hares</label>
-                </div>
+                <div>
+                    <div class="in-row">
+                        <input type="radio" id="hares" name="hares">
+                        <label for="hares">Hares</label>
+                    </div>
 
-                <div class="in-row">
-                    <input type="radio" id="heaps" name="heaps">
-                    <label for="heaps">Heaps</label>
-                </div>
+                    <div class="in-row">
+                        <input type="radio" id="heaps" name="heaps">
+                        <label for="heaps">Heaps</label>
+                    </div>
 
-                <div class="in-row">
-                    <input type="radio" id="handlebars" name="handlebars">
-                    <label for="handlebars">Handlebars in Attica</label>
+                    <div class="in-row">
+                        <input type="radio" id="handlebars" name="handlebars">
+                        <label for="handlebars">Handlebars in Attica</label>
+                    </div>
                 </div>
             </div>
 
